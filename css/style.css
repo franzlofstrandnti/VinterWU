@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+
+#container{
+    display: grid;
+    height: 100vh;
+    max-height: 100vh;
+    grid-template-columns: 20% 1fr 1fr 20%;
+    grid-template-rows: 70px 40px 1fr 70px;
+    gap: 15px;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'as1 mn1 mn2 as2'
+    'ft ft ft ft';
+}
+
+header{
+    background-color: aqua;
+    grid-area: hd;
+    }
+
+.main1{
+    background-color: blueviolet;
+    grid-area: mn1;
+    border-radius: 15px;
+}
+
+.main2{ 
+    background-color: blue;
+    grid-area: mn2;
+    border-radius: 15px;
+}
+
+nav{
+    background-color: bisque;
+    grid-area: nv;
+    margin-top: -15px;
+}
+
+.aside1{
+    background-color: rgb(230, 126, 34);
+    grid-area: as1;
+    margin-right: 50px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.aside2{
+    background-color: rgb(230, 126, 34);
+    grid-area: as2;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: red;
+    grid-area: ft;
+    
+}
+
