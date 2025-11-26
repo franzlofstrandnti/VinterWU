@@ -7,7 +7,7 @@ body{
     height: 100vh;
     max-height: 100vh;
     grid-template-columns: 20% 1fr 1fr 20%;
-    grid-template-rows: 70px 40px 1fr 70px;
+    grid-template-rows: 100px 20px 1fr 70px;
     gap: 15px;
     grid-template-areas: 
     'hd hd hd hd'
@@ -19,6 +19,11 @@ body{
 header{
     background-color: aqua;
     grid-area: hd;
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
     }
 
 .main1{
@@ -65,3 +70,9 @@ footer{
     
 }
 
+.logo {
+    height:280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
