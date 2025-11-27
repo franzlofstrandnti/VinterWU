@@ -1,5 +1,10 @@
 body{
     margin: 0;
+    background-image: url(../img/tomabbbq.gif);
+    background-size: cover;
+    background-position: center;
+    background-size: 1900px;
+    overflow: hidden;
 }
 
 #container{
@@ -26,26 +31,32 @@ header{
     position: relative;
     }
 
+nav{
+    background-color: bisque;
+    grid-area: nv;
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;text-decoration: none;
+}
+
 .main1{
-    background-color: blueviolet;
+
     grid-area: mn1;
     border-radius: 15px;
 }
 
 .main2{ 
-    background-color: blue;
+
     grid-area: mn2;
     border-radius: 15px;
 }
 
-nav{
-    background-color: bisque;
-    grid-area: nv;
-    margin-top: -15px;
-}
+
 
 .aside1{
-    background-color: rgb(230, 126, 34);
+    /* background-color: rgb(230, 126, 34); */
     grid-area: as1;
     margin-right: 50px;
     margin-left: 15px;
@@ -55,7 +66,7 @@ nav{
 }
 
 .aside2{
-    background-color: rgb(230, 126, 34);
+    /* background-color: rgb(230, 126, 34); */
     grid-area: as2;
     margin-left: 50px;
     margin-right: 15px;
@@ -75,4 +86,20 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.search{
+    height:50px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding-right: 1300px;
+}
+
+.rightheader{
+    height:50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    padding-left: 1300px;
 }
