@@ -7,7 +7,7 @@ body{
     overflow: hidden;
 }
 
-#container{
+#container2{
     display: grid;
     height: 100vh;
     max-height: 100vh;
@@ -17,7 +17,7 @@ body{
     grid-template-areas: 
     'hd hd hd hd'
     'nv nv nv nv'
-    'as1 mn1 mn2 as2'
+    'mn mn mn mn'
     'ft ft ft ft';
 }
 
@@ -42,48 +42,11 @@ nav{
     text-decoration: none;
 }
 
-.main1{
-    grid-area: mn1;
+main{
+    
+    grid-area: mn;
     border-radius: 15px;
-    color: white;
 
-}
-
-.main1:hover{
-    transform: translateY(-10px);
-}
-
-.main2:hover{
-    transform: translateY(-10px);
-}
-
-.main2{ 
-
-    grid-area: mn2;
-    border-radius: 15px;
-    color: white;
-}
-
-
-
-.aside1{
-    /* background-color: rgb(230, 126, 34); */
-    grid-area: as1;
-    margin-right: 50px;
-    margin-left: 15px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    border-radius: 15px;
-}
-
-.aside2{
-    /* background-color: rgb(230, 126, 34); */
-    grid-area: as2;
-    margin-left: 50px;
-    margin-right: 15px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    border-radius: 15px;
 }
 
 footer{
