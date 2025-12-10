@@ -68,6 +68,7 @@ footer{
     justify-content:flex-start;
     align-items:flex-start;
     padding-right: 1300px;
+    z-index: 0;
 }
 
 .rightheader{
@@ -75,5 +76,9 @@ footer{
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    padding-left: 1300px;
+    margin-left: 1300px;
+}
+
+.div1{
+    margin-left: 20px;
 }
