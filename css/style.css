@@ -11,14 +11,14 @@ body{
     display: grid;
     height: 100vh;
     max-height: 100vh;
-    grid-template-columns: 20% 1fr 1fr 20%;
-    grid-template-rows: 100px 20px 1fr 70px;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 15% 3% 65% 15%;
     gap: 15px;
     grid-template-areas: 
-    'hd hd hd hd'
-    'nv nv nv nv'
-    'as1 mn1 mn2 as2'
-    'ft ft ft ft';
+    'hd hd'
+    'nv nv'
+    'as1 mn1'
+    'ft ft';
 }
 
 header{
@@ -42,11 +42,16 @@ nav{
     text-decoration: none;
 }
 
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
 .main1{
     grid-area: mn1;
     border-radius: 15px;
     color: white;
-
+    margin-left: 100px;
 }
 
 .main1:hover{
@@ -89,7 +94,17 @@ nav{
 footer{
     background-color: rgb(230, 126, 34);
     grid-area: ft;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer p, a{
+    color: black;
+}
+footer p{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .logo {
@@ -113,5 +128,5 @@ footer{
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    padding-left: 1300px;
+    margin-left: 1300px;
 }
