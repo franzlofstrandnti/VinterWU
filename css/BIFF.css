@@ -3,7 +3,8 @@ body{
     background-image: url(../img/f4907f117008049.606d9bb6aae9d.gif);
     background-size: cover;
     background-position: center;
-    background-size: 1900px;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -11,14 +12,14 @@ body{
     display: grid;
     height: 100vh;
     max-height: 100vh;
-    grid-template-columns: 20% 1fr 1fr 20%;
-    grid-template-rows: 15% 3% 65% 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 110px 20px 65% 70px;
     gap: 15px;
     grid-template-areas: 
-    'hd hd hd hd'
-    'nv nv nv nv'
-    'mn mn mn mn'
-    'ft ft ft ft';
+    'hd hd'
+    'nv nv'
+    'mn mn'
+    'ft ft';
 }
 
 header{
@@ -47,31 +48,8 @@ nav a{
     text-decoration: none;
 }
 
-main{
-    
-    grid-area: mn;
-    border-radius: 15px;
-
-}
-
-footer{
-    background-color: rgb(230, 126, 34);
-    grid-area: ft;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-footer p, a{
-    color: black;
-}
-footer p{
-    display: flex;
-    justify-content: flex-start;
-}
-
 .logo {
-    height:280px;
+    height:100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +71,48 @@ footer p{
     position: absolute;
     margin-left: 1300px;
 }
+
+main{
+    grid-area: mn;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+main img:hover{
+    transform: translateY(-10px);
+}
+
+.bilderbiff{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buynowknapp{
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(230, 126, 34);
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer p, a{
+    color: black;
+}
+footer p{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
 
 .div1{
     margin-left: 20px;

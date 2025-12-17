@@ -3,16 +3,14 @@ body{
     background-image: url(../img/f4907f117008049.606d9bb6aae9d.gif);
     background-size: cover;
     background-position: center;
-    background-size: 1900px;
     overflow: hidden;
 }
 
 #container{
     display: grid;
     height: 100vh;
-    max-height: 100vh;
     grid-template-columns:50% 50%;
-    grid-template-rows: 15% 3% 65% 15%;
+    grid-template-rows: 110px 20px 65% 70px;
     gap: 15px;
     grid-template-areas: 
     'hd hd'
@@ -45,6 +43,30 @@ nav{
 nav a{
     color: black;
     text-decoration: none;
+}
+
+.logo {
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    height:80px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding-right: 1300px;
+    z-index: 0;
+}
+
+.rightheader{
+    height:50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-left: 1300px;
 }
 
 .main1{
@@ -105,28 +127,4 @@ footer p, a{
 footer p{
     display: flex;
     justify-content: flex-start;
-}
-
-.logo {
-    height:280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search{
-    height:80px;
-    display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    padding-right: 1300px;
-    z-index: 0;
-}
-
-.rightheader{
-    height:50px;
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    margin-left: 1300px;
 }
