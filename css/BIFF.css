@@ -13,7 +13,7 @@ body{
     height: 100vh;
     max-height: 100vh;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 110px 20px 65% 70px;
+    grid-template-rows: 110px 20px 65% 73px;
     gap: 15px;
     grid-template-areas: 
     'hd hd'
@@ -79,6 +79,10 @@ main{
     justify-content: center;
     color: white;
     font-size: 20px;
+}
+
+main p{
+    text-align: center;
 }
 
 main img:hover{

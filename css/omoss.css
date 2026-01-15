@@ -76,9 +76,10 @@ nav a{
     margin-right: 50px;
     font-size: 30px;
     grid-area: mn1;
+    text-align: center;
 }
 
-#main2{
+#section2{
     grid-area: mn2;
     display: flex;
     flex-wrap: wrap;
@@ -86,25 +87,26 @@ nav a{
     gap: 20px;
 }
 
-#main2 img{
+#section2 img{
     width: 400px;
     height: 250px;
     
 }
 
-#main2 h2{
+#section2 h2{
     width: 100%;
     text-align: center;
     font-size: 50px;
 }
 
-#main2 p, h3{
+#section2 p, h3{
     text-align: center;
 }
 
-#main3{
+#section3{
     margin-left: 50px;
     margin-right: 50px;
+    font-family: sans-serif;
 }
 
 footer{
